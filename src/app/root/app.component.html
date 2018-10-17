@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<button (click)="getSelectedRows()">Get Selected Rows</button>
+
+<ag-grid-angular
+  #agGrid
+  style="width: 1400px; height: 800px;"
+  class="ag-theme-balham"
+  [enableSorting]="true"
+  [enableFilter]="true"
+  [rowData]="rowData | async"
+  [columnDefs]="columnDefs"
+  rowSelection="multiple"
+  [autoGroupColumnDef]="autoGroupColumnDef"
+  groupSelectsChildren="true"
+  >
+</ag-grid-angular>

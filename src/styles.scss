@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+$ag-icons-path: "../node_modules/ag-grid-community/src/styles/icons/";
+$odd-row-background-color:rgb(226, 239, 218);
+$header-background-color: rgb(169, 208, 142);
+$secondary-foreground-color: black;
+
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+@import "~ag-grid-community/src/styles/ag-grid.scss";
+@import "~ag-grid-community/src/styles/ag-theme-balham.scss";
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';

@@ -1,0 +1,12 @@
+{
+  "/Activity": {
+    "target": "http://localhost:58619",
+    "secure": false,
+    "changeOrigin": true
+    },
+    "/Activity/activities": {
+      "target": "http://localhost:58619",
+      "secure": false,
+      "changeOrigin": true
+      }
+}
