@@ -4,7 +4,7 @@ import { AgGridNg2 } from 'ag-grid-angular';
 import 'ag-grid-enterprise/main';
 
 @Component({
-    selector: 'app-root',
+    selector: 'runs-root',
     templateUrl: '../root/app.component.html',
     styleUrls: ['../root/app.component.scss']
 })
@@ -60,7 +60,8 @@ export class AppComponent implements OnInit {
     ngOnInit() {
       // this.rowData = this.http.get('https://api.myjson.com/bins/b5qg4');  // smaller data set
       // this.rowData = this.http.get('https://api.myjson.com/bins/zxb1w');
-      this.rowData = this.http.get('http://localhost:58619/activity/activities');
+      // this.rowData = this.http.get('http://localhost:58619/activity/activities');  // regular http call
+      this.rowData = this.http.get('http://localhost:58619/activity/activities-offline');
   }
 
   getSelectedRows() {

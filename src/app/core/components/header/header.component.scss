@@ -1,0 +1,16 @@
+mat-toolbar {
+    display: flex;
+    height: 64px;
+    align-items: stretch;
+    align-content: center;
+    justify-content: center;
+    * {
+      margin: auto 5px;
+    }
+    :first-child {
+      margin: 0px;
+    }
+  }
+  .flex-spacer {
+    flex: 1 1 auto;
+  }

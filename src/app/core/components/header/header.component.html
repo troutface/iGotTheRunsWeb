@@ -1,7 +1,9 @@
-<mat-toolbar>
+<mat-toolbar color="primary">
   <mat-toolbar-row>
-      <p>
-          header works!
-      </p>
+      <img *ngIf="true" id="1" matTooltip="iGotTheRuns" matTooltipDisabled="true" src="assets/maleHoldingItInPurple.png" height="50" [style.order]="1" />
+      <span id="2" matTooltip="iGotTheRuns" matTooltipDisabled="true" [style.cursor]="default"
+          [ngClass]="{'noselect': true}" [style.order]="2">{{ title }}</span>
+      <span class="flex-spacer" [style.order]="7"></span>
+      <!--<art-icon (dispatch)="onDispatch($event)" *ngFor="let icon of headerConfig?.icons" [icon]="icon" [style.order]="icon.order"></art-icon>-->
   </mat-toolbar-row>
 </mat-toolbar>
