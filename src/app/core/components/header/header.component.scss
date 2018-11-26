@@ -11,6 +11,17 @@ mat-toolbar {
       margin: 0px;
     }
   }
+  .mat-toolbar.mat-primary {
+    background: #bb54fb;
+  }
   .flex-spacer {
     flex: 1 1 auto;
+  }
+
+  #logo {
+    color: yellow;
+  }
+
+  #logo_text {
+    color: yellow
   }
